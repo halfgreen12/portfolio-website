@@ -82,7 +82,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 400px;
-    height: 90vh;
+    height: 80vh;
     border-radius: 15px;
 }
 .about-col-2{
@@ -119,10 +119,13 @@ nav ul li a:hover::after{
 }
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 25px 0;
 }
 .tab-contents ul li span{
     color: #fba651;
+}
+.tab-contents ul li p{
+    margin-top: 5px;
 }
 .tab-contents{
     display: none;
