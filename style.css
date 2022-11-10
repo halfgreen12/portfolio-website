@@ -63,7 +63,7 @@ nav ul li a:hover::after{
     color: #fba651
 }
 
-/* -----about----- */
+/* --------about-------- */
 
 #about{
     padding: 80px 0;
@@ -128,7 +128,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* -----portfolio----- */
+/* --------portfolio-------- */
 #portfolio{
     padding: 50px 0;
 }
@@ -194,3 +194,76 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
+/* --------contact-------- */
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.contact-left p i{
+    color: #fba651;
+    margin-right: 15px;
+    font-size: 22px;
+}
+.social-icons{
+    margin-top: 60px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 20px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #fba651;
+    transform: translateY(-5px);
+}
+.btn{
+    display: inline-block;
+    margin: 42px auto;
+    width: fit-content;
+    border: 1px solid #fba651;
+    background: #fba651;
+    padding: 14px 80px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width:90%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    /* padding: 14px 30px; */
+    font-size: 17px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright p span{
+    color: #fba651
+}
