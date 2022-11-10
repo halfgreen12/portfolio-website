@@ -269,7 +269,7 @@ form .btn{
 }
 /* ---------------css for small screens--------------- */
 /* nav bar icons dont show on big screen */
-nav .fa-xmark, .fa-bars{
+nav .fa-xmark, nav .fa-bars{
     display: none;
 }
 
