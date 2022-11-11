@@ -69,7 +69,7 @@ nav ul li a:hover::after{
 /* --------------about-------------- */
 
 #about{
-    padding: 80px 0;
+    padding: 60px 0;
     color: #ababab;
 }
 .row{
@@ -136,7 +136,7 @@ nav ul li a:hover::after{
 
 /* --------------portfolio------------- */
 #portfolio{
-    padding: 50px 0;
+    padding: 40px 0;
 }
 .project-list{
     display: grid;
@@ -202,6 +202,9 @@ nav ul li a:hover::after{
 }
 
 /* ---------------contact--------------- */
+#contact{
+    margin-top: 50px;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -326,4 +329,10 @@ nav .fa-xmark, nav .fa-bars{
     .copyright{
         font-size: 14px;
     }
+}
+/* ---------------submit form--------------- */
+#msg{
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
 }

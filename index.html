@@ -51,11 +51,11 @@
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Backend Development</span>
-                            <p>fully functional and fast backend applications with Python Flask</p></li>
+                            <p>fully functional and fast backend applications with Python Flask and Bootstrap</p></li>
                         <li><span>Frontend Development</span>
-                            <p>Building interactive and responive websites with HTML, CSS, and Javascript</p></li>
+                            <p>Building interactive and responsive websites with HTML, CSS, and Javascript</p></li>
                         <li><span>Web Scraping</span>
-                            <p>Building backend web applications</p></li>
+                            <p>Cleaning and presenting data in digestible formats</p></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
@@ -65,7 +65,7 @@
                         <li><span>Tahoe Rides</span>
                             <p>Full Stack Engineer - Creation and deployemnt of fully operational web application</p></li>
                         <li><span>Oktana</span>
-                            <p>Software Engineer - Team Manager</p></li>
+                            <p>Software Engineer Supplier - Account Manager</p></li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -129,12 +129,13 @@
                 <a href="images/Neil Griffin-Resume.pdf" download class="btn">Download Resume</a>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" name="Name" id="" placeholder="Your Name" required>
-                    <input type="text" name="Email" id="" placeholder="Your Email" required>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
                     <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn">Submit</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -143,8 +144,7 @@
     </div>
 </div>
 
-
-
+<!-- script for 'about me' section tabs -->
 <script>
 
     const tablinks = document.getElementsByClassName("tab-links");
@@ -163,6 +163,7 @@
 
 </script>
 
+<!-- script for small screen hamburger menu -->
 <script>
 
     const sidemenu = document.getElementById("sidemenu")
@@ -176,6 +177,25 @@
 
 </script>
 
+<!-- script contacting 'contact me' form to google sheet -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwxy6uBPZqtf5Ri9_DGTyjAuzR-bixTUu6as1D9A6UVNp5n5svL6YjXaZow6oWPoBJI/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
 </html>
