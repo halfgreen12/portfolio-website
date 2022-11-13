@@ -297,7 +297,7 @@ nav .fa-xmark, nav .fa-bars{
         font-size: 30px;
     }
     /* nav bar icons */
-    nav .fa-xmark, .fa-bars{
+    nav .fa-xmark, nav .fa-bars{
         display: block;
         font-size: 23px;
     }
