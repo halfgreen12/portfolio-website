@@ -1,4 +1,6 @@
-My portfolio webiste. Written in html, css, and javascript.
+# My portfolio webiste
+
+Written in html, css, and javascript.
 
 ## Key Features
 
@@ -10,3 +12,5 @@ My portfolio webiste. Written in html, css, and javascript.
 ## Author
 
 * [Neil Griffin](https://github.com/halfgreen12/)
+
+
