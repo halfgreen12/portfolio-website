@@ -1,4 +1,4 @@
-# My portfolio webiste
+# My portfolio website
 
 Written in html, css, and javascript.
 
