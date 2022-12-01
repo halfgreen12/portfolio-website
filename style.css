@@ -232,6 +232,9 @@ a:hover {
     margin-right: 15px;
     font-size: 22px;
 }
+.contact-left a{
+    color: white;
+}
 .social-icons{
     margin-top: 60px;
 }
