@@ -65,6 +65,13 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color: #fba651
 }
+a:link {
+    color: #fba651;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 
 /* --------------about-------------- */
 
